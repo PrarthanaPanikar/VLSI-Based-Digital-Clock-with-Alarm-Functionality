@@ -24,8 +24,6 @@
 * [Project Structure](#-project-structure)
 * [RTL Modules](#-rtl-modules)
 * [Simulation Results](#-simulation-results)
-* [RTL Schematic](#-rtl-schematic)
-* [Yosys Synthesis Report](#-yosys-synthesis-report)
 * [How to Run](#-how-to-run)
 * [Tools Used](#-tools-used)
 * [Learning Outcomes](#-learning-outcomes)
@@ -307,44 +305,6 @@ Result:
 
 ```text
 alarm_out = 1
-```
-
----
-
-# 🔷 RTL Schematic
-
-<p align="center">
-  <img src="images/10_rtl_schematic.png" width="900">
-</p>
-
-Generated using:
-
-* Yosys
-* Graphviz
-
----
-
-# ⚙️ Yosys Synthesis Report
-
-<p align="center">
-  <img src="images/11_yosys_synthesis_report.png" width="900">
-</p>
-
-### Design Statistics
-
-```text
-Total Cells : 26
-
-Adders      : 4
-Flip-Flops  : 6
-Comparators : 6
-MUXes       : 6
-```
-
-Successfully synthesized using:
-
-```text
-Yosys 0.66
 ```
 
 ---
