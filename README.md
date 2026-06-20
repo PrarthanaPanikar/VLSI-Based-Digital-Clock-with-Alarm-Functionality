@@ -1,16 +1,3 @@
-design -reset
-
-read_verilog rtl/clk_en.v
-read_verilog rtl/time_core.v
-read_verilog rtl/alarm_fsm.v
-read_verilog rtl/top.v
-
-hierarchy -top top
-proc
-opt
-
-
-
 # ⏰ VLSI-Based Digital Clock with Alarm Functionality
 
 <p align="center">
