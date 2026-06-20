@@ -1,0 +1,1193 @@
+{
+  "creator": "Yosys 0.66+103 (git sha1 e2903c4a5, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)",
+  "modules": {
+    "$paramod$08714dcff519a5102e99a59d9999d7cf79cc9698\\clk_en": {
+      "attributes": {
+        "hdlname": "clk_en",
+        "src": "rtl/clk_en.v:6.1-43.10"
+      },
+      "parameter_default_values": {
+        "CLK_HZ": "00000000000000000000000001100100",
+        "TICK_HZ": "00000000000000000000000000001010"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "tick": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$add$rtl/clk_en.v:38$18": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "rtl/clk_en.v:38.28-38.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68 ]
+          }
+        },
+        "$eq$rtl/clk_en.v:31$17": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000001",
+            "A_WIDTH": "00000000000000000000000000100000",
+            "B_SIGNED": "00000000000000000000000000000001",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/clk_en.v:31.16-31.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ],
+            "B": [ "1", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 69 ]
+          }
+        },
+        "$procdff$66": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/clk_en.v:20.5-41.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 70 ],
+            "Q": [ 4 ]
+          }
+        },
+        "$procdff$69": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "00000000000000000000000000000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "rtl/clk_en.v:20.5-41.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102 ],
+            "Q": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ]
+          }
+        },
+        "$procmux$47": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl/clk_en.v:31.16-31.36|rtl/clk_en.v:31.13-39.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68 ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 69 ],
+            "Y": [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102 ]
+          }
+        },
+        "$procmux$50": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl/clk_en.v:31.16-31.36|rtl/clk_en.v:31.13-39.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 69 ],
+            "Y": [ 70 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\counter[31:0]": {
+          "hide_name": 1,
+          "bits": [ 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102 ],
+          "attributes": {
+            "src": "rtl/clk_en.v:20.5-41.8"
+          }
+        },
+        "$0\\tick[0:0]": {
+          "hide_name": 1,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "rtl/clk_en.v:20.5-41.8"
+          }
+        },
+        "$add$rtl/clk_en.v:38$18_Y": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68 ],
+          "signed": 1,
+          "attributes": {
+            "src": "rtl/clk_en.v:38.28-38.39"
+          }
+        },
+        "$eq$rtl/clk_en.v:31$17_Y": {
+          "hide_name": 1,
+          "bits": [ 69 ],
+          "attributes": {
+            "src": "rtl/clk_en.v:31.16-31.36"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "rtl/clk_en.v:10.17-10.20"
+          }
+        },
+        "counter": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ],
+          "signed": 1,
+          "attributes": {
+            "src": "rtl/clk_en.v:18.13-18.20"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "rtl/clk_en.v:11.17-11.20"
+          }
+        },
+        "tick": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "rtl/clk_en.v:13.16-13.20"
+          }
+        }
+      }
+    },
+    "alarm_fsm": {
+      "attributes": {
+        "src": "rtl/alarm_fsm.v:5.1-49.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "alarm_enable": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "current_hr": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9 ]
+        },
+        "current_min": {
+          "direction": "input",
+          "bits": [ 10, 11, 12, 13, 14, 15 ]
+        },
+        "alarm_hr": {
+          "direction": "input",
+          "bits": [ 16, 17, 18, 19, 20 ]
+        },
+        "alarm_min": {
+          "direction": "input",
+          "bits": [ 21, 22, 23, 24, 25, 26 ]
+        },
+        "alarm_out": {
+          "direction": "output",
+          "bits": [ 27 ]
+        }
+      },
+      "cells": {
+        "$eq$rtl/alarm_fsm.v:34$12": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:34.13-34.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 6, 7, 8, 9 ],
+            "B": [ 16, 17, 18, 19, 20 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$eq$rtl/alarm_fsm.v:35$14": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000110",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000110",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:35.13-35.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10, 11, 12, 13, 14, 15 ],
+            "B": [ 21, 22, 23, 24, 25, 26 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$logic_and$rtl/alarm_fsm.v:33$13": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:33.12-34.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 28 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$logic_and$rtl/alarm_fsm.v:33$15": {
+          "hide_name": 1,
+          "type": "$logic_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:33.12-35.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 29 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$procdff$54": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "1",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:22.1-47.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 32 ],
+            "Q": [ 27 ]
+          }
+        },
+        "$procmux$20": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl/alarm_fsm.v:33.12-35.38|rtl/alarm_fsm.v:33.9-43.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 31 ],
+            "Y": [ 32 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\alarm_out[0:0]": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:22.1-47.4"
+          }
+        },
+        "$eq$rtl/alarm_fsm.v:34$12_Y": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:34.13-34.36"
+          }
+        },
+        "$eq$rtl/alarm_fsm.v:35$14_Y": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:35.13-35.37"
+          }
+        },
+        "$logic_and$rtl/alarm_fsm.v:33$13_Y": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:33.12-34.37"
+          }
+        },
+        "$logic_and$rtl/alarm_fsm.v:33$15_Y": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:33.12-35.38"
+          }
+        },
+        "alarm_enable": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:10.17-10.29"
+          }
+        },
+        "alarm_hr": {
+          "hide_name": 0,
+          "bits": [ 16, 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:15.23-15.31"
+          }
+        },
+        "alarm_min": {
+          "hide_name": 0,
+          "bits": [ 21, 22, 23, 24, 25, 26 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:16.23-16.32"
+          }
+        },
+        "alarm_out": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:18.16-18.25"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:7.17-7.20"
+          }
+        },
+        "current_hr": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:12.23-12.33"
+          }
+        },
+        "current_min": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14, 15 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:13.23-13.34"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "rtl/alarm_fsm.v:8.17-8.20"
+          }
+        }
+      }
+    },
+    "time_core": {
+      "attributes": {
+        "src": "rtl/time_core.v:6.1-60.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "tick_1hz": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "sec": {
+          "direction": "output",
+          "bits": [ 5, 6, 7, 8, 9, 10 ]
+        },
+        "min": {
+          "direction": "output",
+          "bits": [ 11, 12, 13, 14, 15, 16 ]
+        },
+        "hr": {
+          "direction": "output",
+          "bits": [ 17, 18, 19, 20, 21 ]
+        }
+      },
+      "cells": {
+        "$add$rtl/time_core.v:44$8": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:44.27-44.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17, 18, 19, 20, 21 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ]
+          }
+        },
+        "$add$rtl/time_core.v:49$9": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000110",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:49.24-49.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11, 12, 13, 14, 15, 16 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ]
+          }
+        },
+        "$add$rtl/time_core.v:54$10": {
+          "hide_name": 1,
+          "type": "$add",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000110",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000100000",
+            "Y_WIDTH": "00000000000000000000000000100000"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:54.20-54.27"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 6, 7, 8, 9, 10 ],
+            "B": [ "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "Y": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$70": {
+          "hide_name": 1,
+          "type": "$adffe",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000001",
+            "ARST_VALUE": "000000",
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "EN_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000110"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:18.1-58.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "EN": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 118, 119, 120, 121, 122, 123 ],
+            "EN": [ 124 ],
+            "Q": [ 11, 12, 13, 14, 15, 16 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$73": {
+          "hide_name": 1,
+          "type": "$adffe",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000001",
+            "ARST_VALUE": "000000",
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "EN_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000110"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:18.1-58.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "EN": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 125, 126, 127, 128, 129, 130 ],
+            "EN": [ 4 ],
+            "Q": [ 5, 6, 7, 8, 9, 10 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$74": {
+          "hide_name": 1,
+          "type": "$adffe",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000001",
+            "ARST_VALUE": "00000",
+            "CLK_POLARITY": "00000000000000000000000000000001",
+            "EN_POLARITY": "00000000000000000000000000000001",
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:18.1-58.4"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "EN": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 3 ],
+            "CLK": [ 2 ],
+            "D": [ 131, 132, 133, 134, 135 ],
+            "EN": [ 136 ],
+            "Q": [ 17, 18, 19, 20, 21 ]
+          }
+        },
+        "$auto$opt_dff.cc:252:make_patterns_logic$72": {
+          "hide_name": 1,
+          "type": "$reduce_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000010",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 137 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$auto$opt_dff.cc:252:make_patterns_logic$76": {
+          "hide_name": 1,
+          "type": "$reduce_and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000011",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 137, 138 ],
+            "Y": [ 136 ]
+          }
+        },
+        "$eq$rtl/time_core.v:31$5": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000110",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000110",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:31.12-31.21"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5, 6, 7, 8, 9, 10 ],
+            "B": [ "1", "1", "0", "1", "1", "1" ],
+            "Y": [ 137 ]
+          }
+        },
+        "$eq$rtl/time_core.v:36$6": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000110",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000110",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:36.16-36.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11, 12, 13, 14, 15, 16 ],
+            "B": [ "1", "1", "0", "1", "1", "1" ],
+            "Y": [ 138 ]
+          }
+        },
+        "$eq$rtl/time_core.v:41$7": {
+          "hide_name": 1,
+          "type": "$eq",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000101",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000101",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "rtl/time_core.v:41.20-41.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17, 18, 19, 20, 21 ],
+            "B": [ "1", "1", "1", "0", "1" ],
+            "Y": [ 139 ]
+          }
+        },
+        "$procmux$25": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000101"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl/time_core.v:41.20-41.28|rtl/time_core.v:41.17-44.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22, 23, 24, 25, 26 ],
+            "B": [ "0", "0", "0", "0", "0" ],
+            "S": [ 139 ],
+            "Y": [ 131, 132, 133, 134, 135 ]
+          }
+        },
+        "$procmux$35": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000110"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl/time_core.v:36.16-36.25|rtl/time_core.v:36.13-49.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 54, 55, 56, 57, 58, 59 ],
+            "B": [ "0", "0", "0", "0", "0", "0" ],
+            "S": [ 138 ],
+            "Y": [ 118, 119, 120, 121, 122, 123 ]
+          }
+        },
+        "$procmux$42": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000110"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "rtl/time_core.v:31.12-31.21|rtl/time_core.v:31.9-54.28"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 86, 87, 88, 89, 90, 91 ],
+            "B": [ "0", "0", "0", "0", "0", "0" ],
+            "S": [ 137 ],
+            "Y": [ 125, 126, 127, 128, 129, 130 ]
+          }
+        }
+      },
+      "netnames": {
+        "$add$rtl/time_core.v:44$8_Y": {
+          "hide_name": 1,
+          "bits": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ],
+          "attributes": {
+            "src": "rtl/time_core.v:44.27-44.33",
+            "unused_bits": "5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$rtl/time_core.v:49$9_Y": {
+          "hide_name": 1,
+          "bits": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ],
+          "attributes": {
+            "src": "rtl/time_core.v:49.24-49.31",
+            "unused_bits": "6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$add$rtl/time_core.v:54$10_Y": {
+          "hide_name": 1,
+          "bits": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117 ],
+          "attributes": {
+            "src": "rtl/time_core.v:54.20-54.27",
+            "unused_bits": "6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+          }
+        },
+        "$auto$opt_dff.cc:251:make_patterns_logic$71": {
+          "hide_name": 1,
+          "bits": [ 124 ],
+          "attributes": {
+          }
+        },
+        "$auto$opt_dff.cc:251:make_patterns_logic$75": {
+          "hide_name": 1,
+          "bits": [ 136 ],
+          "attributes": {
+          }
+        },
+        "$eq$rtl/time_core.v:31$5_Y": {
+          "hide_name": 1,
+          "bits": [ 137 ],
+          "attributes": {
+            "src": "rtl/time_core.v:31.12-31.21"
+          }
+        },
+        "$eq$rtl/time_core.v:36$6_Y": {
+          "hide_name": 1,
+          "bits": [ 138 ],
+          "attributes": {
+            "src": "rtl/time_core.v:36.16-36.25"
+          }
+        },
+        "$eq$rtl/time_core.v:41$7_Y": {
+          "hide_name": 1,
+          "bits": [ 139 ],
+          "attributes": {
+            "src": "rtl/time_core.v:41.20-41.28"
+          }
+        },
+        "$procmux$25_Y": {
+          "hide_name": 1,
+          "bits": [ 131, 132, 133, 134, 135 ],
+          "attributes": {
+          }
+        },
+        "$procmux$35_Y": {
+          "hide_name": 1,
+          "bits": [ 118, 119, 120, 121, 122, 123 ],
+          "attributes": {
+          }
+        },
+        "$procmux$42_Y": {
+          "hide_name": 1,
+          "bits": [ 125, 126, 127, 128, 129, 130 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "rtl/time_core.v:8.17-8.20"
+          }
+        },
+        "hr": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "rtl/time_core.v:14.22-14.24"
+          }
+        },
+        "min": {
+          "hide_name": 0,
+          "bits": [ 11, 12, 13, 14, 15, 16 ],
+          "attributes": {
+            "src": "rtl/time_core.v:13.22-13.25"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "rtl/time_core.v:9.17-9.20"
+          }
+        },
+        "sec": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10 ],
+          "attributes": {
+            "src": "rtl/time_core.v:12.22-12.25"
+          }
+        },
+        "tick_1hz": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "rtl/time_core.v:10.17-10.25"
+          }
+        }
+      }
+    },
+    "top": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "rtl/top.v:5.1-78.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "alarm_enable": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "alarm_hr": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9 ]
+        },
+        "alarm_min": {
+          "direction": "input",
+          "bits": [ 10, 11, 12, 13, 14, 15 ]
+        },
+        "alarm_out": {
+          "direction": "output",
+          "bits": [ 16 ]
+        },
+        "sec": {
+          "direction": "output",
+          "bits": [ 17, 18, 19, 20, 21, 22 ]
+        },
+        "min": {
+          "direction": "output",
+          "bits": [ 23, 24, 25, 26, 27, 28 ]
+        },
+        "hr": {
+          "direction": "output",
+          "bits": [ 29, 30, 31, 32, 33 ]
+        }
+      },
+      "cells": {
+        "U_ALARM": {
+          "hide_name": 0,
+          "type": "alarm_fsm",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "rtl/top.v:61.15-76.6"
+          },
+          "port_directions": {
+            "alarm_enable": "input",
+            "alarm_hr": "input",
+            "alarm_min": "input",
+            "alarm_out": "output",
+            "clk": "input",
+            "current_hr": "input",
+            "current_min": "input",
+            "rst": "input"
+          },
+          "connections": {
+            "alarm_enable": [ 4 ],
+            "alarm_hr": [ 5, 6, 7, 8, 9 ],
+            "alarm_min": [ 10, 11, 12, 13, 14, 15 ],
+            "alarm_out": [ 16 ],
+            "clk": [ 2 ],
+            "current_hr": [ 29, 30, 31, 32, 33 ],
+            "current_min": [ 23, 24, 25, 26, 27, 28 ],
+            "rst": [ 3 ]
+          }
+        },
+        "U_CLK": {
+          "hide_name": 0,
+          "type": "$paramod$08714dcff519a5102e99a59d9999d7cf79cc9698\\clk_en",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "rtl/top.v:33.5-39.6"
+          },
+          "port_directions": {
+            "clk": "input",
+            "rst": "input",
+            "tick": "output"
+          },
+          "connections": {
+            "clk": [ 2 ],
+            "rst": [ 3 ],
+            "tick": [ 34 ]
+          }
+        },
+        "U_TIME": {
+          "hide_name": 0,
+          "type": "time_core",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "rtl/top.v:45.15-55.6"
+          },
+          "port_directions": {
+            "clk": "input",
+            "hr": "output",
+            "min": "output",
+            "rst": "input",
+            "sec": "output",
+            "tick_1hz": "input"
+          },
+          "connections": {
+            "clk": [ 2 ],
+            "hr": [ 29, 30, 31, 32, 33 ],
+            "min": [ 23, 24, 25, 26, 27, 28 ],
+            "rst": [ 3 ],
+            "sec": [ 17, 18, 19, 20, 21, 22 ],
+            "tick_1hz": [ 34 ]
+          }
+        }
+      },
+      "netnames": {
+        "alarm_enable": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "rtl/top.v:10.16-10.28"
+          }
+        },
+        "alarm_hr": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "rtl/top.v:12.22-12.30"
+          }
+        },
+        "alarm_min": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13, 14, 15 ],
+          "attributes": {
+            "src": "rtl/top.v:13.22-13.31"
+          }
+        },
+        "alarm_out": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "rtl/top.v:15.17-15.26"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "rtl/top.v:7.16-7.19"
+          }
+        },
+        "hr": {
+          "hide_name": 0,
+          "bits": [ 29, 30, 31, 32, 33 ],
+          "attributes": {
+            "src": "rtl/top.v:19.23-19.25"
+          }
+        },
+        "min": {
+          "hide_name": 0,
+          "bits": [ 23, 24, 25, 26, 27, 28 ],
+          "attributes": {
+            "src": "rtl/top.v:18.23-18.26"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "rtl/top.v:8.16-8.19"
+          }
+        },
+        "sec": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19, 20, 21, 22 ],
+          "attributes": {
+            "src": "rtl/top.v:17.23-17.26"
+          }
+        },
+        "tick_1hz": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "rtl/top.v:27.10-27.18"
+          }
+        }
+      }
+    }
+  }
+}

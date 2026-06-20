@@ -1,0 +1,13 @@
+read_verilog rtl/clk_en.v
+read_verilog rtl/time_core.v
+read_verilog rtl/alarm_fsm.v
+read_verilog rtl/top.v
+
+hierarchy -top top
+
+proc
+opt
+
+stat
+
+write_json reports/top.json
