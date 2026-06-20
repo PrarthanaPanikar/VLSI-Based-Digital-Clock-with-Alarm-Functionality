@@ -1,8 +1,6 @@
 # ⏰ VLSI-Based Digital Clock with Alarm Functionality
 
-<p align="center">
-  <img src="images/10_rtl_schematic.png" width="800">
-</p>
+**Designed, simulated, and synthesized a VLSI-Based Digital Clock with Alarm Functionality using Verilog HDL, GTKWave, and Yosys. A great hands-on experience in counters, clock management, alarm logic, RTL verification, and synthesis. Special thanks to Umesh Yadav Sir for his guidance**. ⏰🚀 
 
 <p align="center">
   <img src="https://img.shields.io/badge/Verilog-HDL-blue" />
